@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dummybot88/react-lerna.git",
+  "author": "dummybot88 <sravanjun08@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.4.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "yarn && lerna bootstrap && lerna run bootstrap",
+    "build": "lerna run build",
+    "start": "lerna run start --stream",
+    "test": "lerna run test --stream"
+  }
+}
